@@ -29,11 +29,16 @@ public class Exponential {
    
    
     public static void main(String[] args) {
-        Exponential exponential = new Exponential();
-        exponential.pangkat(3);
-        exponential.showHasil();
-        exponential.pangkat(4, 3);
-        exponential.showHasil();
+//        Exponential exponential = new Exponential();
+//        exponential.pangkat(3);
+//        exponential.showHasil();
+//        exponential.pangkat(4, 3);
+        
+        //menggunakan constructor
+        Exponential exp1 = new Exponential(3);
+        exp1.showHasil();
+        Exponential exp2 = new Exponential(5, 3);
+        exp2.showHasil();
     }
 
     private double pangkat(double inputY) {
